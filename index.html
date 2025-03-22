@@ -99,7 +99,7 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <h2>Informasi Acara</h2>
-            <p class="alamat">Alamat: Restoran Mie. <br> Jl. K.K Singawinata No.44, Nagri Tengah, Kec. Purwakarta, Kabupaten Purwakarta,</p>
+            <p class="alamat">Alamat: Restoran Mie XP <br> Jl. K.K Singawinata No.44, Nagri Tengah, Kec. Purwakarta, Kabupaten Purwakarta,</p>
             <a href="https://maps.app.goo.gl/zwGoKg4at6KfxDzz6" target="_blank" class="btn btn-light btn-sm my-3">klik untuk membuka peta</a>
             <p class="description">diharapkan untuk tidak salah alamat dan tanggal. manakala tiba di tujuan namun tidak ada tanda tanda pernikaha . LU NYASAR BOSS</p>
           </div>
@@ -217,8 +217,18 @@
       </div>
     </div>
   </section>
+  
+  <div id="audio-container">
+    <audio id="song" autoplay loop>
+      <source src="audio/weding.mp3" type="audio/mp3">
+    </audio>
 
-  <FOOter>
+    <div class="audio-icon-wrapper" style="display none">
+      <i class="bi bi-disc"></i>
+    </div>
+  </div>
+  
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col text-center text-white">
@@ -232,17 +242,8 @@
         </div>
       </div>
     </div>
-  </FOOter>
+  </footer>
 
-  <div id="audio-container">
-    <audio id="song" autoplay loop>
-      <source src="audio/weding.mp3" type="audio/mp3">
-    </audio>
-
-    <div class="audio-icon-wrapper" style="display none">
-      <i class="bi bi-disc"></i>
-    </div>
-  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
@@ -329,6 +330,12 @@
       offcanvas.addEventListener('hidden.bs.offcanvas', function() {
         stickyTop.style.overflow = 'hidden';
       });
+    </script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('nama');
+      console.log(nama);
     </script>
 
 </body>

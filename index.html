@@ -20,8 +20,8 @@
     
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
-        <h4>kepada bapak/ibu/saudara/i,</h4>
-        <h1>Choi Kang Chi & Ai Black Mamba</h1>
+        <h4>kepada<span>bapak/ibu/saudara/i,</span></h4>
+        <h1>Choi Kang Chi & Aisyahhh</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
         <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
       </main>
@@ -84,7 +84,7 @@
             <img src="img/yaya.jpg" alt="Ai Black Mamba" class="img-responsive rounded-circle">
           </div>
           <div class="col-8">
-          <h3>Ai Black Mamba</h3>
+          <h3>Aisyahhh</h3>
           <p>Anak pertama yang GALAK, tidak mau mengalah anti KIPAS ANGIN</p>
         <p>Putra dari Bpk. BoboiBoy <br> dan <br> Ibu Yaya</p>
       </div>
@@ -100,8 +100,11 @@
           <div class="col-md-8 col-10 text-center">
             <h2>Informasi Acara</h2>
             <p class="alamat">Alamat: Restoran Mie XP <br> Jl. K.K Singawinata No.44, Nagri Tengah, Kec. Purwakarta, Kabupaten Purwakarta,</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.742875350291!2d107.4458304!3d-6.5541103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690f23cc5bf8d7%3A0xa8b52547bb8ae63d!2sMie%20XP%20Purwakarta%20(new)!5e0!3m2!1sid!2sid!4v1742695398052!5m2!1sid!2sid" width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             <a href="https://maps.app.goo.gl/zwGoKg4at6KfxDzz6" target="_blank" class="btn btn-light btn-sm my-3">klik untuk membuka peta</a>
-            <p class="description">diharapkan untuk tidak salah alamat dan tanggal. manakala tiba di tujuan namun tidak ada tanda tanda pernikaha . LU NYASAR BOSS</p>
+            <p class="description">diharapkan untuk tidak salah alamat dan tanggal. manakala tiba di tujuan namun tidak ada tanda tanda pernikahan . LU NYASAR BOSS</p>
           </div>
         </div>
 
@@ -187,6 +190,32 @@
           <button class="btn btn-primary">Kirim</button>
         </div>
       </form>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://jeni-wedding.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?
+              ref_noscript">comments powered by 
+              Disqus.</a></noscript>
+        </div>
+      </div>
     </div>
 
   </section>
@@ -334,8 +363,12 @@
 
     <script>
       const urlParams = new URLSearchParams(window.location.search);
-      const nama = urlParams.get('nama');
-      console.log(nama);
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+      const namaContainer = document.querySelector('.hero h4 span');
+      namaContainer.innerText = `${pronoun} ${nama},`; .replace(/ ,$/, ',');
+
+      document.querySelector('#nama').value = nama;
     </script>
 
 </body>

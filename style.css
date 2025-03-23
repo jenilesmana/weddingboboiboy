@@ -204,7 +204,7 @@ backdrop-filter: blur(4px);
     background-color: white;
     padding-top: 10rem;
     padding-bottom: 8rem;
-    min-height: 100vh;
+    min-height: 50px;
 }
 
 footer {

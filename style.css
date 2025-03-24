@@ -227,6 +227,20 @@ footer li {
     display: inline;
 }
 
+.dekorasi {
+    width: 15rem;
+    height: 15rem;
+    font-size: 15rem;
+    position: relative;
+    bottom: 10rem;
+    left: 9rem;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
 .audio-icon-wrapper {
     width: 2rem;
     height: 2rem;

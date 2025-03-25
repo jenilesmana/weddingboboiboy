@@ -245,6 +245,23 @@ footer li {
     line-height: 0;
 }
 
+.dekor1 {
+    width: 25rem;
+    height: 25rem;
+    font-size: 5rem;
+    position: relative;
+    bottom: 30rem;
+    left: -2rem;
+}
+.dekor2 {
+    width: 25rem;
+    height: 25rem;
+    font-size: 5rem;
+    position: relative;
+    bottom: 30rem;
+    left:43rem;
+}
+
 @keyframes rotating {
     from {
         transform: rotate(0);

@@ -16,7 +16,7 @@ min-height: 100px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/download.jpg);
+    background-image: url(img/bg11.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -35,7 +35,7 @@ min-height: 100vh;
 
 .hero h1 {
 font-family: "Sacramento", cursive;
-font-size: 4rem;
+font-size: 3rem;
 }
 
 .hero p {
@@ -44,12 +44,12 @@ font-size: 1.5rem;
 
 .hero a {
     color: #ffff;
-    background-color: #001329;
+    background-color: #cd5e77;
 }
 
 .hero a:hover {
 background-color: #ffff ;
-color: #001329
+color: #cd5e77
 }
 
 .mynavbar {
@@ -71,15 +71,15 @@ backdrop-filter: blur(4px);
      text-transform: uppercase;
 }
 
+
 .home {
-    background-image: url(img/bg2.jpg);
+    background-image: url(img/bbg3.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
     margin-top: -5rem;
     padding-top: 13rem;
     padding-bottom: 5rem;
-
 }
 
 .home h2 {
@@ -98,7 +98,7 @@ backdrop-filter: blur(4px);
 }
 
 .home .couple{
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 .home .couple h3 {
@@ -106,20 +106,19 @@ backdrop-filter: blur(4px);
     font-size: 2.4rem;
 }
 
-
 .home .couple img {
     width: 100%;
 }
 
 .info  {
-    background-color: #03254c;
-    color: white;
+    background-color: #eeddd3;
+    color: black;
     padding-top: 10rem;
     padding-bottom: 8rem;
 }
 
 .info h2 {
-    color: white;
+    color: #cd5e77;
     font-family: "Sacramento", cursive;
     font-size: 5rem;
     font-weight: bold;
@@ -136,7 +135,7 @@ backdrop-filter: blur(4px);
 
 .info .card {
     background-color: rgba(255, 255, 2555, 0.2)!important;
-    color: white !important;
+    color: black !important;
     border: 1px solid #999;
 }
 
@@ -157,7 +156,7 @@ backdrop-filter: blur(4px);
 }
 
 .rsvp {
-    background-image: url(img/bg3.jpg);
+    background-image: url(img/bbg4.jpg);
     padding-top: 10rem;
     padding-bottom: 8rem;
     background-position: center;
@@ -167,7 +166,7 @@ backdrop-filter: blur(4px);
 
 .rsvp h2, 
 .Gifts h2 {
-    color: #03254c;
+    color: #cd5e77;
     font-family: "Sacramento", cursive;
     font-size: 4rem;
     font-weight: bold;
@@ -180,14 +179,14 @@ backdrop-filter: blur(4px);
 }
 
 .rsvp button {
-    background-color: #03254c;
+    background-color: #cd5e77;
     color: white;
-    border: 1px solid #03254c;
+    border: 1px solid #cd5e77;
 }
 
 .rsvp button:hover {
     background-color: white;
-    color: #03254c;
+    color: #cd5e77;
     border: 1px solid white;
 }
 
@@ -209,7 +208,7 @@ backdrop-filter: blur(4px);
 
 footer {
     padding: 3rem;
-    background-color: #03254c;
+    background-color: #cd5e77;
 }
 
 footer a {
@@ -219,26 +218,12 @@ footer a {
 }
 
 footer a:hover {
-    color: #b5d0ed;
+    color: #f0a9ba;
 }
 
 footer li {
     list-style: none;
     display: inline;
-}
-
-.dekorasi {
-    width: 15rem;
-    height: 15rem;
-    font-size: 15rem;
-    position: relative;
-    bottom: 10rem;
-    left: 9rem;
-    animation: rotating 4s linear infinite;
-    transform-origin: center;
-    justify-content: center;
-    align-items: center;
-    line-height: 0;
 }
 
 .audio-icon-wrapper {

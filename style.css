@@ -35,7 +35,7 @@ min-height: 100vh;
 
 .hero h1 {
 font-family: "Sacramento", cursive;
-font-size: 4rem;
+font-size: 3.5rem;
 color: #cd5e77;
 }
 
@@ -248,18 +248,18 @@ footer li {
 }
 
 .dekor1 {
-    width: 10rem;
-    height: 10rem;
+    width: 11rem;
+    height: 11rem;
     font-size: 5rem;
     position: relative;
-    bottom: 10rem;
+    bottom: 15rem;
 }
 .dekor2 {
-    width: 10rem;
-    height: 10rem;
+    width: 11rem;
+    height: 11rem;
     font-size: 5rem;
     position: relative;
-    bottom: 10rem;
+    bottom: 15rem;
     left:30rem;
 }
 

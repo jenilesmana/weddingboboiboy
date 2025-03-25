@@ -29,17 +29,19 @@ position: relative;
 min-height: 100vh;
  }
 
-.hero h1, .hero h4, .hero p{
+.hero h1 {
     text-shadow: var(--shadow);
 }
 
 .hero h1 {
 font-family: "Sacramento", cursive;
-font-size: 3rem;
+font-size: 4rem;
+color: #cd5e77;
 }
 
-.hero p {
+.hero p, .hero h4 {
 font-size: 1.5rem;
+color: black;
 }
 
 .hero a {
@@ -250,16 +252,15 @@ footer li {
     height: 10rem;
     font-size: 5rem;
     position: relative;
-    bottom: 30rem;
-    left: -2rem;
+    bottom: 10rem;
 }
 .dekor2 {
     width: 10rem;
     height: 10rem;
     font-size: 5rem;
     position: relative;
-    bottom: 30rem;
-    left:43rem;
+    bottom: 10rem;
+    left:30rem;
 }
 
 @keyframes rotating {

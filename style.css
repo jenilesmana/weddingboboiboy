@@ -252,14 +252,15 @@ footer li {
     height: 12rem;
     font-size: 5rem;
     position: relative;
-    bottom: 18rem;
+    bottom: 15rem;
+    left:1rem;
 }
 .dekor2 {
     width: 11rem;
     height: 11rem;
     font-size: 5rem;
     position: relative;
-    bottom: 18rem;
+    bottom: 15rem;
     left:30rem;
 }
 

@@ -1,2 +1,2 @@
-# weddingboboiboy
+# wedding
 web

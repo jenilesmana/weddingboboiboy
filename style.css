@@ -248,18 +248,19 @@ footer li {
 }
 
 .dekor1 {
-    width: 11rem;
-    height: 11rem;
+    width: 12rem;
+    height: 12rem;
     font-size: 5rem;
     position: relative;
-    bottom: 15rem;
+    bottom: 17rem;
+    right: 1rem;
 }
 .dekor2 {
     width: 11rem;
     height: 11rem;
     font-size: 5rem;
     position: relative;
-    bottom: 15rem;
+    bottom: 17rem;
     left:30rem;
 }
 

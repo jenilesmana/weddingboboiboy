@@ -29,14 +29,50 @@
         <h1> & </h1> 
         <h1> Ai Mida Rimayatu Solihah</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
-        <div class="row my-3 d-flex justify-content-center" id="countdown-wedding">
-          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>0</h5> Hari</div></div>
-          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>0</h5> Jam</div></div>
-          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>0</h5> Menit</div></div>
-          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>0</h5> Detik</div></div>
+        <div class="row my-3 d-flex justify-content-center" id="waktu">
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-align"><h5>0<h5> Hari</div></div>
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-align"><h5>0<h5> Jam</div></div>
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-align"><h5>0<h5> Menit</div></div>
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-align"><h5>0<h5> Detik</div></div>
         </div>
         <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
       </main>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 25, 2025 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="waktu"
+  document.getElementById("waktu").innerHTML = `
+  <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-align"><h5>${days}<h5> Hari</div></div>
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-align"><h5>${hours}<h5> Jam</div></div>
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-align"><h5>${minutes}<h5> Menit</div></div>
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-align"><h5>${seconds}<h5> Detik</div></div>
+        </div>
+  `
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
     </section>
     
 
@@ -388,33 +424,6 @@
     <script>
       AOS.init();
     </script>
-
-    <script>
-      var countdownDate = new Date ("Jul 25,2025 08:00:00").getTime()
-      var x =setInterval(function(){
-        var now = new Date().getTime
-        var distance = countdownDate - now
-        var days = match.floor(distance / (1000 * 60 * 60 * 24))
-        var hours = match.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000)
-
-        Document.getElementById('countdown-wedding').innerHTML = `
-        <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>${days}</h5> Hari</div></div>
-          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>${hours}</h5> Jam</div></div>
-          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>${minutes}</h5> Menit</div></div>
-          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>${seconds}</h5> Detik</div></div>
-        `
-        if (distance < 0) {
-          clearInterval(x)
-          document.getElementById('countdown-wedding').innerHTML = "<span class'text-center p-3 rounded text-light m-2'><h2>sudah dimulai!</h2></span>"
-        }
-      },1000)
-    </script>
-    <!-- jquery2 -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    
 
 </body>
 </html>

@@ -19,9 +19,6 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
-    <!-- simplyCountdown -->
-     <link rel="stylesheet" href="countdown/default.css" />
-     <script src="countdown/simplyCountdown.js"></script>
   </head>
   <body>
     
@@ -32,7 +29,12 @@
         <h1> & </h1> 
         <h1> Ai Mida Rimayatu Solihah</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
-        <div class="countdown"></div>
+        <div class="row my-3 d-flex justify-content-center" id="countdown-wedding">
+          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>0</h5> Hari</div></div>
+          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>0</h5> Jam</div></div>
+          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>0</h5> Menit</div></div>
+          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>0</h5> Detik</div></div>
+        </div>
         <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
@@ -388,9 +390,29 @@
     </script>
 
     <script>
-      simplyCountdown('.countdown', {});
+      var countdownDate = new Date ("Jul 25,2025 08:00:00").getTime()
+      var x =setInterval(function(){
+        var now = new Date().getTime
+        var distance = countdownDate - now
+        var days = match.floor(distance / (1000 * 60 * 60 * 24))
+        var hours = match.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+        Document.getElementById('countdown-wedding').innerHTML = `
+        <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>${days}</h5> Hari</div></div>
+          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>${hours}</h5> Jam</div></div>
+          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>${minutes}</h5> Menit</div></div>
+          <div class="col-lg-1 col-3"> <div class="text-center p-2 rounded text-light"> <h5>${seconds}</h5> Detik</div></div>
+        `
+        if (distance < 0) {
+          clearInterval(x)
+          document.getElementById('countdown-wedding').innerHTML = "<span class'text-center p-3 rounded text-light m-2'><h2>sudah dimulai!</h2></span>"
+        }
+      },1000)
     </script>
 
+    
 
 </body>
 </html>

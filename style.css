@@ -100,12 +100,13 @@ backdrop-filter: blur(4px);
 }
 
 .home .couple{
-    margin-top: 100px;
+    margin-top: 3rem;
 }
 
 .home .couple h3 {
     font-family: "Sacramento", cursive;
     font-size: 4rem;
+    margin-top: 1rem;
 }
 
 .home .couple p {
@@ -113,8 +114,11 @@ backdrop-filter: blur(4px);
 }
 
 .home .couple img {
-    width: 100%;
+    width: 30%;
+    justify-content: center;
+    margin-top:1rem ;
 }
+
 
 .info  {
     background-color: #eeddd3;
@@ -140,23 +144,23 @@ backdrop-filter: blur(4px);
 }
 
 .info .card {
-    background-color: rgba(255, 255, 2555, 0.2)!important;
+    background-color: #f1e3e6!important;
     color: black !important;
-    border: 1px solid #999;
+    border: 1px solid #f3b1c1;
 }
 
 .info .card-header {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #f3b1c1;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
 
 .info .card-body {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .info .card-footer {
-    border-top: 1px solid #999;
+    border-top: 1px solid #f3b1c1;
     font-size: 0.9rem;
     font-weight: 300;
 }
@@ -259,14 +263,9 @@ footer li {
     bottom: 20rem;
     left:1rem;
 }
-.dekor2 {
-    width: 11rem;
-    height: 11rem;
-    font-size: 5rem;
-    position: relative;
-    bottom: 16.5rem;
-    left:30rem;
-}
+
+
+
 
 @keyframes rotating {
     from {

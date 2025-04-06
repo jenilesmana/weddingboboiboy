@@ -208,15 +208,20 @@ var x = setInterval(function() {
             <ul class="list-group">
               <li class="list-group-item">
                 <div class="fw-bold">BCA</div>
-                4600161364 - JENI JAYA LESMANA
+                JENI JAYA LESMANA -
+                <input class="form-copy" id="text-copy" value="4600161364">
+          <button class="btn btn-copy btn-circle" onclick="copyText()">
+              <i class="bi bi-copy"></i>
+          </button>
               </li>
+              <li class="list-group-item">
+                <div class="fw-bold">BRI</div>
+                AI MIDA RIMAYATU SOLIHAH -
+              </li>
+              </div>
             </ul>
           </div>
         </div>
-        <button type="button" class="copy" data-copy="123">
-          <ion-icon name="copy-outline" class="copy-icon"></ion-icon>
-          <span class="copy-label">copy</span>
-        </button>
       </div>
     </section>
     
@@ -417,8 +422,16 @@ var x = setInterval(function() {
       AOS.init();
     </script>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+  function copyText() {  
+    var copyText = document.getElementById("text-copy");  
+    copyText.select();  
+    document.execCommand("copy");
+}
+
+</script>
+
+
 
 </body>
 </html>

@@ -114,7 +114,7 @@ backdrop-filter: blur(4px);
 }
 
 .home .couple img {
-    width: 30%;
+    width: 40%;
     justify-content: center;
     margin-top:1rem ;
 }
@@ -255,17 +255,10 @@ footer li {
     line-height: 0;
 }
 
-.dekor1 {
-    width: 12rem;
-    height: 12rem;
-    font-size: 5rem;
-    position: relative;
-    bottom: 20rem;
-    left:1rem;
+.form-copy {
+    outline: #ffff;
+    border: #ffff;
 }
-
-
-
 
 @keyframes rotating {
     from {

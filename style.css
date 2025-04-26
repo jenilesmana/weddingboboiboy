@@ -260,6 +260,13 @@ footer li {
     border: #ffff;
 }
 
+#waktu{
+    color: #cd5e77;
+    font-weight: bold;
+    text-shadow: var(--shadow)
+}
+
+
 @keyframes rotating {
     from {
         transform: rotate(0);

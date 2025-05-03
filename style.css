@@ -123,9 +123,15 @@ backdrop-filter: blur(4px);
 .info  {
     background-image: url(img/bg5.jpg);
     background-position: center;
+    background-size: cover;
     color: black;
-    padding-top: 10rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+}
+
+.info a{
+    color: black;
+    background-color: #cd5e77;
 }
 
 .info h2 {
@@ -133,6 +139,7 @@ backdrop-filter: blur(4px);
     font-family: "Sacramento", cursive;
     font-size: 5rem;
     font-weight: bold;
+    padding-top: 10rem;
 }
 
 .info .alamat {
@@ -145,18 +152,20 @@ backdrop-filter: blur(4px);
 }
 
 .info .card {
-    background-color: #f1e3e6!important;
+    background-color: white!important;
     color: black !important;
-    border: 1px solid #f3b1c1;
+    border: 1px solid white
 }
 
 .info .card-header {
-    border-bottom: 1px solid #f3b1c1;
+    border-bottom: 1px solid white;
     text-transform: uppercase;
+    background-color: white!important;
     letter-spacing: 0.1rem;
     font-family: "Sacramento", cursive;
     font-weight: bold;
     color: #cd5e77;
+    font-size: 1.5;
 }
 
 .info .card-body {
@@ -165,9 +174,16 @@ backdrop-filter: blur(4px);
 }
 
 .info .card-footer {
-    border-top: 1px solid #f3b1c1;
+    border-top: 1px solid white;
     font-size: 0.9rem;
     font-weight: 300;
+    background-color: white!important;
+}
+
+.card-footer img{
+    left: 50%;
+    right: 50%;
+    position: relative;
 }
 
 .rsvp {
@@ -275,15 +291,61 @@ footer li {
     position:relative;
     bottom:10rem;
     right: 5rem;
-    width: 38%;
+    width: 30%;
 }
 
+.png img{
+    position: absolute;
+    display: flex;
+}
 .png2 img{
     position:relative;
-    bottom:30rem;
-    left:33rem;
-    width: 20%;
-    rotate: -90deg;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    right: 50%;
+    bottom: 0rem;
+    animation: rotating 4s linear infinite;
+    tranform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.png3 img{
+    position:relative;
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    right: 70%;
+    bottom: 0rem;
+    animation: rotating 4s linear infinite;
+    tranform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.png4 img{
+    position:relative;
+    width: 50px;
+    height: 50px;
+    left: 70%;
+    right: 30%;
+    bottom: 0rem;
+    animation: rotating 4s linear infinite;
+    tranform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+.png6 img{
+    position: relative;
+    display: flex;
+    bottom: 15rem;
 }
 
 

@@ -266,6 +266,22 @@ footer li {
     text-shadow: var(--shadow)
 }
 
+.png1 img{
+    position:relative;
+    bottom:0rem;
+    right:1rem;
+    width: 20rem;
+}
+
+.png2 img{
+    position:relative;
+    bottom:16rem;
+    left:50rem;
+    width: 20rem;
+    rotate: -90deg;
+}
+
+
 
 @keyframes rotating {
     from {

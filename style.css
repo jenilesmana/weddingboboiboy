@@ -121,7 +121,8 @@ backdrop-filter: blur(4px);
 
 
 .info  {
-    background-color: #eeddd3;
+    background-image: url(img/bg5.jpg);
+    background-position: center;
     color: black;
     padding-top: 10rem;
     padding-bottom: 8rem;
@@ -280,7 +281,7 @@ footer li {
 .png2 img{
     position:relative;
     bottom:30rem;
-    left:30rem;
+    left:33rem;
     width: 20%;
     rotate: -90deg;
 }

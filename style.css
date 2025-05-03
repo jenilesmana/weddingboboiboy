@@ -153,10 +153,14 @@ backdrop-filter: blur(4px);
     border-bottom: 1px solid #f3b1c1;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    font-family: "Sacramento", cursive;
+    font-weight: bold;
+    color: #cd5e77;
 }
 
 .info .card-body {
     font-size: 2rem;
+    font-family: "Sacramento", cursive;
 }
 
 .info .card-footer {

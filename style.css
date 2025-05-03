@@ -121,9 +121,7 @@ backdrop-filter: blur(4px);
 
 
 .info  {
-    background-image: url(img/bg5.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: white;
     color: black;
     padding-top: 5rem;
     padding-bottom: 0rem;

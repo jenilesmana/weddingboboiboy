@@ -197,7 +197,7 @@ backdrop-filter: blur(4px);
 .Gifts h2 {
     color: #cd5e77;
     font-family: "Sacramento", cursive;
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: bold;
 }
 
@@ -233,6 +233,10 @@ backdrop-filter: blur(4px);
     padding-top: 10rem;
     padding-bottom: 8rem;
     min-height: 50px;
+}
+
+.fw-bold {
+    color: #cd5e77;
 }
 
 footer {
@@ -344,6 +348,29 @@ footer li {
     position: relative;
     display: flex;
     bottom: 13rem;
+}
+
+.kupu img{
+    position: relative;
+    display:flex;
+    left: 10%;
+    right: 90%;
+    bottom: 0rem;
+    width: 75%;
+    height: 75%;
+}
+
+.kupu2 {
+    position: absolute;
+    display: flex;
+    padding-top: 20rem;
+}
+
+.kupu3 {
+    position: absolute;
+    display: flex;
+    padding-left:38rem;
+    padding-top: 60rem;
 }
 
 

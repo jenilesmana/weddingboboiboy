@@ -270,14 +270,14 @@ footer li {
     position:relative;
     bottom:0rem;
     right:1rem;
-    width: 20rem;
+    width: 10%;
 }
 
 .png2 img{
     position:relative;
     bottom:16rem;
     left:50rem;
-    width: 20rem;
+    width: 10%;
     rotate: -90deg;
 }
 

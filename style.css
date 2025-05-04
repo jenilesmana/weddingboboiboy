@@ -193,7 +193,13 @@ backdrop-filter: blur(4px);
     min-height: 100vh;
 }
 
-.rsvp h2, 
+.rsvp h2 {
+    color: #cd5e77;
+    font-family: "Sacramento", cursive;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
 .Gifts h2 {
     color: #cd5e77;
     font-family: "Sacramento", cursive;
@@ -368,7 +374,22 @@ footer li {
     padding-top: 35rem;
 }
 
+.kupu4 {
+    position: absolute;
+    display: flex;
+    top: 0%;
+    left: 5%;
+    right: 95%;
+    width: 40%;
+    height: 40%;
+}
 
+.png5 img{
+    position: relative;
+    display: flex;
+    bottom: 0rem;
+    left: 35%;
+}
 
 @keyframes rotating {
     from {

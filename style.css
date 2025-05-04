@@ -196,7 +196,7 @@ backdrop-filter: blur(4px);
 .rsvp h2 {
     color: #cd5e77;
     font-family: "Sacramento", cursive;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -371,7 +371,7 @@ footer li {
     position: absolute;
     display: flex;
     padding-left:4rem;
-    padding-top: 35rem;
+    padding-top: 65%;
 }
 
 .kupu4 {
@@ -380,8 +380,8 @@ footer li {
     top: 0%;
     left: 5%;
     right: 95%;
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
 }
 
 .png5 img{

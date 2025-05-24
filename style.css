@@ -391,6 +391,30 @@ footer li {
     left: 35%;
 }
 
+.story h2{
+    font-family: "Sacramento", cursive;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #cd5e77;
+}
+.story img {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.sekat{
+    position: relative;
+    display: flex;
+    width: 7rem;
+    left: 45%;
+    right: 55%;
+} 
+
+.story{
+    padding-top: 5%;
+}
+
 @keyframes rotating {
     from {
         transform: rotate(0);
